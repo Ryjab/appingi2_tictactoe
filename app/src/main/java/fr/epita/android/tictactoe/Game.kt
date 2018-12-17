@@ -15,11 +15,9 @@ class Game : AppCompatActivity() {
 
         var currentId : Int = 0
 
-        val JoueurTag = arrayOf<String>("X", "O")
         val onClick =  View.OnClickListener{
             val id = it.id
-            val button = findViewById<Button>(id) as Button
-
+            val button = findViewById<Button>(id)
             if (button.text != "")
             {
                 if (currentId == 0) {
@@ -45,8 +43,6 @@ class Game : AppCompatActivity() {
         activity_game_3_1.setOnClickListener { onClick }
         activity_game_3_2.setOnClickListener { onClick }
         activity_game_3_3.setOnClickListener { onClick }
-
-
 
     }
 }
